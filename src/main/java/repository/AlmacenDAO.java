@@ -45,7 +45,7 @@ public class AlmacenDAO {
     //Paso 3: Prepara y ejecutar las distintas consultas que nos piden.
     //Consulta 1: Insertar empleados y pedidos
     //En este caso usamos Statement.
-    //Statement nosotros le metemos los datos directamente y ejecuta la consulta.
+    //En Statement metemos los datos directamente y ejecuta la consulta.
     //PreparedStatement prepara la consulta, le metemos los datos manualmente y ejecutamos la consulta
     public void insertarEmpleadosyPedidos(){
         try(Statement st = conexion().createStatement()) {

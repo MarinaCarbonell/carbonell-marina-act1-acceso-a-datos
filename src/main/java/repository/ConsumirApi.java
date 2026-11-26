@@ -25,11 +25,12 @@ public class ConsumirApi {
         try(InputStream entrada = new URI(url).toURL().openStream()) {
             JSONTokener tokener = new JSONTokener(entrada);
             JSONObject root = new JSONObject(tokener);
+            //aqui creamos una lista con los productos de la API
             JSONArray listaProductos = root.getJSONArray("products");
 
             for(int i = 0; i < listaProductos.length(); i++){
                 JSONObject item = listaProductos.getJSONObject(i);
-
+                //Aqui añadimos los productos de la lista de la API en otra lista de texto plano
                 lista.add(new Producto(
                         item.getInt("id"),
                         item.getString("title"),

@@ -7,7 +7,7 @@ import lombok.Data;
 // Genera constructores vacios
 import lombok.NoArgsConstructor;
 
-//importamos los metodos de lalibreria lombok paraa poder usarlos
+//importamos los metodos de la libreria lombok paraa poder usarlos
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
